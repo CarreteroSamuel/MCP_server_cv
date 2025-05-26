@@ -1,0 +1,20 @@
+{
+  "name": "mcp_server_smart_cv",
+  "version": "1.0.0",
+  "main": "mcp_server_cv.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "description": "Serveur MCP pour informations personnelles et compétences",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+    "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["mcp", "claude", "personal-info", "cv"],
+  "author": "Samuel Carretero",
+  "license": "MIT"
+}
