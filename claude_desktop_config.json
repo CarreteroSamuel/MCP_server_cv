@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cv-mcp-server": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://cv-mcp-server.carretero-samuel.workers.dev/sse"
+      ]
+    }
+  }
+}

@@ -1,20 +1,29 @@
 {
-  "name": "mcp_server_smart_cv",
-  "version": "1.0.0",
-  "main": "mcp_server_cv.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
-  },
-  "description": "Serveur MCP pour informations personnelles et compétences",
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.0"
-  },
-    "engines": {
-    "node": ">=18.0.0"
-  },
-  "keywords": ["mcp", "claude", "personal-info", "cv"],
-  "author": "Samuel Carretero",
-  "license": "MIT"
+	"name": "remote-mcp-server-authless",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"format": "biome format --write",
+		"lint:fix": "biome lint --fix",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"type-check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.12.0",
+		"agents": "^0.0.94",
+		"fs": "^0.0.1-security",
+		"nodemailer": "^7.0.3",
+		"path": "^0.12.7",
+		"zod": "^3.25.28"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.15.29",
+		"@types/nodemailer": "^6.4.17",
+		"typescript": "^5.8.3",
+		"wrangler": "^4.19.1"
+	}
 }
